@@ -1,12 +1,14 @@
+cargo-features = ["edition2021"]
 [package]
 name = "eww"
 version = "0.2.0"
 authors = ["elkowar <5300871+elkowar@users.noreply.github.com>"]
-edition = "2018"
+edition = "2021"
 description = "Widget system for everyone!"
 license = "MIT"
 repository = "https://github.com/elkowar/eww"
 homepage = "https://github.com/elkowar/eww"
+
 
 
 [features]
@@ -20,7 +22,9 @@ version = "0.14.0"
 gtk = { version = "0.14", features = [ "v3_22" ] }
 gdk = { version = "*", features = ["v3_22"] }
 gio = { version = "*", features = ["v2_44"] }
-glib = { version = "*", features = ["v2_44"] }
+glib = { version = "0.14.8"}
+
+cairo-rs = "0.14.0"
 
 gdk-pixbuf = "0.9"
 
